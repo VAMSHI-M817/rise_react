@@ -1,6 +1,7 @@
 import React from "react";
 import ProfileCard from "./ProfileCard";
 import { data } from "./data";
+import UseState from "../useState/UseState";
 
 const App = () => {
   let count = 10;
@@ -9,7 +10,8 @@ const App = () => {
   }
   return (
     <main className="container">
-      <ul className="comment-container">
+      <UseState />
+      {/* <ul className="comment-container">
         {data.map((eachObj) => {
           const { id, name, email, body } = eachObj;
           return (
@@ -25,12 +27,12 @@ const App = () => {
       </ul>
 
       <button
-        onClick={(e)=>{
-          return handleClick(e, "Vamshi")
+        onClick={(e) => {
+          return handleClick(e, "Vamshi");
         }}
       >
         Click Me
-      </button>
+      </button> */}
     </main>
   );
 };
