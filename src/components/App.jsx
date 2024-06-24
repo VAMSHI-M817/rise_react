@@ -2,6 +2,7 @@ import React from "react";
 import ProfileCard from "./ProfileCard";
 import { data } from "./data";
 import UseState from "../useState/UseState";
+import UseState1 from "../useState/UseState1";
 
 const App = () => {
   let count = 10;
@@ -10,7 +11,7 @@ const App = () => {
   }
   return (
     <main className="container">
-      <UseState />
+      <UseState1 />
       {/* <ul className="comment-container">
         {data.map((eachObj) => {
           const { id, name, email, body } = eachObj;
