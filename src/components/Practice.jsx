@@ -1,6 +1,5 @@
 import { useState } from "react"
 
-
 const Practice = () => {
   const [firstName, setfirstName] = useState("")
   const [email, setEmail] = useState("")
