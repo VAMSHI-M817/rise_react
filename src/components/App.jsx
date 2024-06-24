@@ -3,6 +3,8 @@ import ProfileCard from "./ProfileCard";
 import { data } from "./data";
 import UseState from "../useState/UseState";
 import UseState1 from "../useState/UseState1";
+import Forms from "../useState/useFormHandling";
+import Practice from "./Practice";
 
 const App = () => {
   let count = 10;
@@ -11,7 +13,8 @@ const App = () => {
   }
   return (
     <main className="container">
-      <UseState1 />
+      {/* <Forms /> */}
+      <Practice />
       {/* <ul className="comment-container">
         {data.map((eachObj) => {
           const { id, name, email, body } = eachObj;
