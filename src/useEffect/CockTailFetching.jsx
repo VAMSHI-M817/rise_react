@@ -18,6 +18,9 @@ const CockTailFetching = () => {
 
   const fetchedData = async (apiURL) => {
     setLoading(true);
+    setIsError({
+      status: false,
+    });
     try {
       const response = await fetch(apiURL);
       const { drinks } = await response.json();
